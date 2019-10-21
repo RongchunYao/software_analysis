@@ -10,7 +10,7 @@
   store i32 %11, i32* %5, align 4, !tbaa !2
   %12 = tail call i32 @_Z2fbPi(i32* nonnull %3)
   ret i32 %12
-这里可以看到重复对%5进行了赋值。
+这里可以看到重复对%5进行了重复赋值。
 
 int fb(int *h)
 {
